@@ -1,0 +1,1 @@
+SELECT emailaddress FROM users

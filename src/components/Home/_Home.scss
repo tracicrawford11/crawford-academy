@@ -1,0 +1,208 @@
+//Nav Variables
+$navOverflow: hidden;
+$navBgColor: rgb(238, 207, 181);
+$navPosition: fixed;
+$navWidth: 100%;
+$navHeight: 75px;
+$navDisplay: flex;
+$navJustCon: space-around;
+$navAlItems: center;
+
+//Button Hover Variables
+$btnHovBgColor: royalblue;
+$btnHovTextColor: white;
+$btnFtSize: 17px;
+$btnCursor: pointer;
+
+//H1 Variables
+$h1Color: royalblue;
+$h1FtWeight: bolder;
+$h1FtFamily: cursive;
+$h1FtSize: 190%;
+
+
+
+.topnav {
+    overflow: $navOverflow; 
+    background-color: $navBgColor;
+    position: $navPosition;
+    width: $navWidth;
+    display: $navDisplay;
+    justify-content: $navJustCon;
+    align-items: $navAlItems;
+    height: $navHeight;
+}
+.crc {
+    color: $h1Color;
+ 
+    font: {
+        weight: $h1FtWeight;
+        family: $h1FtFamily;
+        size: $h1FtSize;
+    }
+}
+.navbar {
+    background-color: $navBgColor;
+    display: $navDisplay;
+    
+}
+.topnav button {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background-color: $navBgColor;
+}
+.topnav button:hover {
+    background-color: $btnHovBgColor;
+    color: $btnHovTextColor;
+}    
+.background-container {
+    height: 600px;
+    width: 100vw;
+}
+.fix-credit {
+    height: 600px;
+    width: 100vw;
+    margin-top: 60px;
+}
+.images {
+    display: flex;
+
+}
+.benefits {
+    height: 300px;
+    width: 50vw
+}
+.advantage {
+    height: 300px;
+    width: 50vw;
+}
+.expectations {
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    background-color: antiquewhite;
+}
+.exp {
+    font-size: 190%;
+    font-weight: bolder;
+    margin: 40px
+}
+.parexp {
+    margin-left:95px;
+    margin-right: 95px;
+    font-size: 125%;
+    flex-wrap: wrap;
+}
+.education {
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.edu {
+    font-size: 190%;
+    font-weight: bolder;
+    margin: 30px;
+}
+.education-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85vw;
+}
+.edbox1 {
+    width: 350px;
+    height: 250px;
+}
+.myth1 {
+    width: 350px;
+    height: 250px
+}
+.edbox2 {
+    width: 350px;
+    height: 250px;
+}
+.myth2 {
+    width: 350px;
+    height: 250px
+}
+.edbox3 {
+    width: 400px;
+    height: 250px;
+}
+.scores {
+    width: 400px;
+    height: 250px;
+}
+
+.education2 {
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.edu2 {
+    font-size: 190%;
+    font-weight: bolder;
+    margin: 30px;
+}
+.education-boxes2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 85vw;
+}
+.edbox1-2 {
+    width: 350px;
+    height: 250px;
+}
+.fact1 {
+    width: 350px;
+    height: 250px
+}
+    
+.edbox2-2 {
+    width: 350px;
+    height: 250px;
+}
+.fact2 {
+    width: 350px;
+    height: 250px;
+}
+.edbox3-2 {
+    width: 400px;
+    height: 250px;
+}
+.summary2 {
+    width: 400px;
+    height: 250px
+}
+.process {
+    height: 250px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.proc {
+    font-size: 190%;
+    font-weight: bolder;
+    margin: 30px;
+}
+.steps {
+    height: 250px;
+    width: 100vw
+}
+
+

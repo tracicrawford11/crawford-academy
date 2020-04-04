@@ -1,0 +1,22 @@
+.inputs {
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+.sub-btn {
+    font-size: 15px;
+    cursor: pointer;
+    width: 100px
+}
+.sub button:hover {
+    background-color: royalblue;
+    color: white;
+}  
+@media (max-width: 970px) {
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+    }    
+}
