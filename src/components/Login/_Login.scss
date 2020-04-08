@@ -1,19 +1,18 @@
 header {
-    height: 75px;
-    width: 100vw;
-    background-color: wheat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow: $navOverflow; 
+    background-color: $navBgColor;
+    position: $navPosition;
+    width: $navWidth;
+    display: $navDisplay;
+    justify-content: $navJustCon;
+    align-items: $navAlItems;
+    height: $navHeight;
 }
 h1 {
-    color: royalblue;
- 
-    font: {
-        weight: bolder;
-        family: cursive;
-        size: 190%;
-    }
+    color: $h1Color;
+    font-weight: $h1FtWeight;
+    font-family:  $h1FtFamily;
+    font-size: $h1FtSize;
 }
 .login {
     display: flex;
@@ -40,13 +39,23 @@ input {
     margin-top: 20px
 }
 .return-button {
-    font-size: 15px;
-    cursor: pointer;
-    height: 30px
+    float: $btnFloat;
+  color: $btnTextColor;
+  text-align: $btnTextAlign;
+  padding: $btnPadding;
+  text-decoration: $btnTextDecor;
+  font-size: $btnFontSize;
+  border: $btnBorder;
+  cursor: $btnCurs;
+  background-color: $btnBgColor;
+  width: $btnWidth;
+  height: $btnHeight;
 }
 .return-button button:hover {
-    background-color: royalblue;
-    color: white;
+    background-color:  $btnHovBgColor;
+    color:  $btnHovTextColor;
+    font-size:  $btnFtSize;
+    cursor: $btnCursor;
 }
 @media (max-width: 578px) {
     .login {

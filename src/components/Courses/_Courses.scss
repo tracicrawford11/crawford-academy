@@ -1,5 +1,5 @@
 body {
-    background-color: antiquewhite;
+    background-color: $navBgColor;
 }
 .services {
     overflow: $navOverflow; 
@@ -12,13 +12,10 @@ body {
     height: $navHeight;
 }
 .services-h1 {
-    color: royalblue;
- 
-    font: {
-        weight: bolder;
-        family: cursive;
-        size: 190%;
-    }
+    color:  $h1Color;
+    font-weight: $h1FtWeight;
+    font-family: $h1FtFamily;
+    font-size:  $h1FtSize;
 }
 .services button {
     float: left;
@@ -45,14 +42,7 @@ body {
     background-color: $btnHovBgColor;
     color: $btnHovTextColor;
 }
-.mapped-services {
+.mapped-courses {
     width: 90vw;
     margin: 80px
 } 
-h1 {
-    font: {
-        weight: bold;
-        family: cursive;
-        size: 150%;
-    }  
-}

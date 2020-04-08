@@ -1,18 +1,31 @@
-#remove {
+body {
+    background-color: $navBgColor;
+}
+header.cart {
+    background-color: lightgray;
+}
+.ordered {
+    color:  $h1Color;
+    font-weight: $h1FtWeight;
+    font-family: $h1FtFamily;
+    font-size:  $h1FtSize;
+}
+
+.remove {
     cursor: pointer;
     font-size: 15px;
 }
-#remove :hover {
-    background-color: royalblue;
-    color: white;
+.remove :hover {
+    background-color: $btnHovBgColor;
+    color: $btnHovTextColor;
 }
 .checkout {
     cursor: pointer;
     font-size: 15px;
 }
 checkout :hover {
-    background-color: royalblue;
-    color: white
+    background-color: $btnHovBgColor;
+    color: $btnHovTextColor;
 }
 .cart {
     display: flex;

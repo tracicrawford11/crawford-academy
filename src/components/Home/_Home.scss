@@ -1,6 +1,6 @@
 //Nav Variables
 $navOverflow: hidden;
-$navBgColor: rgb(238, 207, 181);
+$navBgColor: lightgray;
 $navPosition: fixed;
 $navWidth: 100%;
 $navHeight: 75px;
@@ -8,20 +8,35 @@ $navDisplay: flex;
 $navJustCon: space-around;
 $navAlItems: center;
 
+//Button Variables
+$btnFloat:  left;
+$btnTextColor:  black;
+$btnTextAlign:   center;
+$btnPadding:    14px 16px;
+$btnTextDecor:  none;
+$btnFontSize:   17px;
+$btnBorder: none;
+$btnCurs:   pointer;
+$btnBgColor:    lightgrey;
+$btnWidth:  165px;
+$btnHeight: 70px;
+
 //Button Hover Variables
-$btnHovBgColor: royalblue;
+$btnHovBgColor: rgb(0, 109, 43);
 $btnHovTextColor: white;
 $btnFtSize: 17px;
 $btnCursor: pointer;
 
 //H1 Variables
-$h1Color: royalblue;
+$h1Color: rgb(0, 109, 43);
 $h1FtWeight: bolder;
-$h1FtFamily: cursive;
+$h1FtFamily: fantasy;
 $h1FtSize: 190%;
 
 
-
+body {
+    background-color: $navBgColor;
+}
 .topnav {
     overflow: $navOverflow; 
     background-color: $navBgColor;
@@ -47,15 +62,17 @@ $h1FtSize: 190%;
     
 }
 .topnav button {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-    background-color: $navBgColor;
+    float: $btnFloat;
+    color: $btnTextColor;
+    text-align: $btnTextAlign;
+    padding: $btnPadding;
+    text-decoration: $btnTextDecor;
+    font-size: $btnFontSize;
+    border: $btnBorder;
+    cursor: $btnCurs;
+    background-color: $btnBgColor;
+    width: $btnWidth;
+    height: $btnHeight;
 }
 .topnav button:hover {
     background-color: $btnHovBgColor;
@@ -72,15 +89,16 @@ $h1FtSize: 190%;
 }
 .images {
     display: flex;
-
+    justify-content: space-evenly;
+    background-color: $navBgColor;
 }
 .benefits {
-    height: 300px;
-    width: 50vw
+    height: 400px;
+    width: 45vw
 }
 .advantage {
-    height: 300px;
-    width: 50vw;
+    height: 400px;
+    width: 45vw;
 }
 .expectations {
     height: 200px;
@@ -89,12 +107,13 @@ $h1FtSize: 190%;
     align-items: center;
     flex-direction: column;
     margin-top: 60px;
-    background-color: antiquewhite;
+    background-color: $navBgColor;
 }
 .exp {
     font-size: 190%;
     font-weight: bolder;
-    margin: 40px
+    margin: 40px;
+    color:  $h1Color;
 }
 .parexp {
     margin-left:95px;
@@ -107,12 +126,13 @@ $h1FtSize: 190%;
     width: 100vw;
     display: flex;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: $navBgColor;
 }
 .edu {
     font-size: 190%;
     font-weight: bolder;
     margin: 30px;
+    color:  $h1Color;
 }
 .education-boxes {
     display: flex;
@@ -125,12 +145,16 @@ $h1FtSize: 190%;
     height: 250px;
 }
 .myth1 {
-    width: 350px;
-    height: 250px
+    width: 250px;
+    height: 350px
 }
 .edbox2 {
     width: 350px;
     height: 250px;
+}
+.fact1 {
+    width: 250px;
+    height: 350px
 }
 .myth2 {
     width: 350px;
@@ -141,8 +165,8 @@ $h1FtSize: 190%;
     height: 250px;
 }
 .scores {
-    width: 400px;
-    height: 250px;
+    width: 250px;
+    height: 350px;
 }
 
 .education2 {
@@ -150,12 +174,13 @@ $h1FtSize: 190%;
     width: 100vw;
     display: flex;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: $navBgColor;
 }
 .edu2 {
     font-size: 190%;
     font-weight: bolder;
     margin: 30px;
+    color:  $h1Color;
 }
 .education-boxes2 {
     display: flex;
@@ -167,11 +192,6 @@ $h1FtSize: 190%;
     width: 350px;
     height: 250px;
 }
-.fact1 {
-    width: 350px;
-    height: 250px
-}
-    
 .edbox2-2 {
     width: 350px;
     height: 250px;
@@ -193,16 +213,19 @@ $h1FtSize: 190%;
     width: 100vw;
     display: flex;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: $navBgColor;
 }
 .proc {
     font-size: 190%;
     font-weight: bolder;
     margin: 30px;
+    color:  $h1Color;
 }
 .steps {
-    height: 250px;
-    width: 100vw
+    height: 240px;
+    width: 90vw;
+    display: flex;
+    align-items:    center
 }
 
 

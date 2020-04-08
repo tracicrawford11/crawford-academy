@@ -2,7 +2,7 @@
   "name": "crawford-academy",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhose:6050",
+  "proxy": "http://localhost:6050",
   "dependencies": {
     "@sendgrid/mail": "^7.0.0",
     "@stripe/react-stripe-js": "^1.1.2",

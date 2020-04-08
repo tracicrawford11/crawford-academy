@@ -1,19 +1,61 @@
-.inputs {
-    height: 300px;
+.nav-bar {
+    overflow: $navOverflow; 
+    background-color: $navBgColor;
+    position: $navPosition;
+    width: $navWidth;
+    display: $navDisplay;
+    justify-content: $navJustCon;
+    align-items: $navAlItems;
+    height: $navHeight;
+    border: 1px solid black
+}
+section {
+    height: 600px;
     width: 100vw;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    margin-top: 25px;
+    border: 1px solid black;
 }
 .sub-btn {
-    font-size: 15px;
-    cursor: pointer;
-    width: 100px
+    float: $btnFloat;
+    color: $btnTextColor;
+    text-align: $btnTextAlign;
+    padding: $btnPadding;
+    text-decoration: $btnTextDecor;
+    font-size: $btnFontSize;
+    border: $btnBorder;
+    cursor: $btnCurs;
+    background-color: $btnBgColor;
+    width: $btnWidth;
+    height: $btnHeight;
 }
-.sub button:hover {
-    background-color: royalblue;
-    color: white;
+.sub-btn button:hover {
+    background-color:  $btnHovBgColor;
+    color:  $btnHovTextColor;
+    font-size:  $btnFtSize;
+    cursor: $btnCursor;
 }  
+.return-button {
+  float: $btnFloat;
+  color: $btnTextColor;
+  text-align: $btnTextAlign;
+  padding: $btnPadding;
+  text-decoration: $btnTextDecor;
+  font-size: $btnFontSize;
+  border: $btnBorder;
+  cursor: $btnCurs;
+  background-color: $btnBgColor;
+  width: $btnWidth;
+  height: $btnHeight;
+}
+.return-button button:hover {
+    background-color:  $btnHovBgColor;
+    color:  $btnHovTextColor;
+    font-size:  $btnFtSize;
+    cursor: $btnCursor;
+}
 @media (max-width: 970px) {
     .inputs {
         flex-direction: column;

@@ -4,7 +4,7 @@ const session = require ('express-session')
 const dotenv = require ('dotenv')
 dotenv.config()
 const checkForSession = require ('./middlewares/checkForSession')
-const prodController = require('./controllers/prodController')
+const courseController = require('./controllers/courseController')
 const authController = require('./controllers/authController')
 const cartController = require ('./controllers/cartController')
 //const goalsController = require('./controllers/goalsController')
@@ -81,12 +81,12 @@ app.post('/pay', async (request, response) => {
     }
   }
 
-app.post('/auth/signup', authController.signup)
+app.post('/auth/signup', authController.signUp)
 app.post('/auth/login', authController.login)
 app.post('/auth/logout', authController.logout)
 app.get('/auth/user', authController.getUser)
 
-app.get('/api/prod', prodController.getCourses)
+app.get('/api/prod', courseController.getCourses)
 
 app.post('/api/cart/checkout', cartController.checkout)
 app.post('/api/cart/:id', cartController.add)

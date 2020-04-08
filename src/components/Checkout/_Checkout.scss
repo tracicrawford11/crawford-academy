@@ -1,12 +1,26 @@
+body {
+    background-color: $navBgColor;
+}
+.top {
+    background-color: lightgray;
+}
+.enter {
+    color:  $h1Color;
+    font-weight:    $h1FtWeight;
+    font-family:    $h1FtFamily;
+    font-size:  $h1FtSize;
+}
 form {
-    margin: 30px
+    margin: 30px;
+    background-color: lightgray;
 }
 .sub-pmt {
     font-size: 15px;
     cursor: pointer;
     height: 30px;
+    
 }
 .sub-pmt button:hover {
-    background-color: royalblue;
-    color: white;
+    background-color: $btnHovBgColor;
+    color: $btnHovTextColor;
 }

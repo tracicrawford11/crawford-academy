@@ -12,8 +12,11 @@ class Courses extends Component {
   }
 }
   componentDidMount() {
-    axios.get('/api/prod').then(response => this.setState({courses: response.data}))
-    this.props.getCourses()
+    axios.get('/api/prod').then(response => {
+      console.log(response.data)
+    this.setState({courses: response.data})})
+    // this.props.getCourses()
+    
   }
 render() {
   console.log(this.props.courses)

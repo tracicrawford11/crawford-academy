@@ -38,24 +38,26 @@ class SignUp extends Component {
         }
         return (
             <div>
-                <header>
+                <header className='nav-bar'>
                     <h1>New Student Registration</h1>
+                    <Link to='/home'><button className='return-button'>Cancel and Return to Home</button></Link>
                 </header>
-                <div className="inputs">
+                
+                <section className='inputs'>
                     <input onChange={this.handleChange} name ='first_name' placeholder='First Name' />
                     <input onChange={this.handleChange} name ='last_name' placeholder='Last Name' />
                     <input onChange={this.handleChange} name='email' placeholder='Email' />
                     <input onChange={this.handleChange} name='password' placeholder='Password' />
                     <input onChange={this.handleChange} name='phone' placeholder='Phone Number' />
                     <input onChange={this.handleChange} name='state' placeholder='State of Residence' />
-                    <select onChange={this.handleChange} name='goal_id'>{this.state.goalAnswers.map(answer => (
+                    {/* <select onChange={this.handleChange} name='course_id'>{this.state.courseAnswers.map(answer => (
                         <option value={+answer.course_id}>{answer.course}</option>))}
                     <option value="" disabled selected hidden>Select your course</option>
-                    </select>
+                    </select> */}
                     {/* <input onChange ={this.handleChange} name = 'message' placeholder='message'/> */}
                     <Link to='/signupconfirmation'><button className='sub-btn' onClick={this.handleClick}>Submit</button></Link>
-                    <Link to='/home'><button className='return-button'>Cancel and Return to Home</button></Link>
-                </div>
+                    
+                </section>
                 
             </div>
         )

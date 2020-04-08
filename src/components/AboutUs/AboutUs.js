@@ -32,76 +32,88 @@ class AboutUs extends Component {
 render() {
     return ( 
         <div>
-            <div>
-                <header className='header'>
-                    <h1 className='contact'>About Us!</h1>
-                    <Link to='/home'><button className='sub'>Return to Home</button></Link> 
-                </header>
-                <section className='boxes'>
-                    <a className='address'>
-                        <h1>Address</h1>
-                        <br/>
-                        <br/>
-                        <p>3939 Evergreen Court</p>
-                        <p>Allen, TX 75013</p>
-                        <br/>
-                        <br/>
-                        <img className='envelope' src='https://lh3.googleusercontent.com/proxy/HC5raZmNY2IfiAAls-XDYcC_Y3S5LfrRVO7yPPfNQpYBHzIZmRb8-03xjXx-STJ-P7Q_pmFiv1igihhaSrxqpS4oDS2bytNVSMd9RFgD6vX0wNCnqpoV' alt='envelope' />
-                    </a>
-                    <a className='phone'>
-                        <h1>Phone</h1>
-                        <br/>
-                        <br/>
-                        <p>(888) 897-0987</p>
-                        <br/>
-                        <br/>
-                        <img className='phone-icon' src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWtVLG1rHDMMxjnMwtLiImtFrDlVm6_qI9FjQLEB6vVqpbAnz8' alt='phone' />
-                    </a>
-                    <a className='email'>
-                        <h1>Email</h1>
-                        <br/>
-                        <br/>
-                        <p>info@crawfordacademy.com</p>
-                        <br/>
-                        <br/>
-                        <img className='email-icon' src='data:image/png;base64,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' alt='email' />
-                    </a>
-                    <a className='hours'>
-                        <h1>Business Hours</h1>
-                        <br/>
-                        <br/>
-                        <p>Mon - Sat</p>
-                        <p>8:00am - 8:00pm</p>
-                        <br/>
-                        <br/>
-                        <img className='hours-icon' src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSzZwP_w5y5d0MZL0IRR-S-aubsO-xjOBfZi5rckx3QR9-NjTSm' alt='clock'/>
-                    </a>
-                </section>
+            <nav className='nav-bar'>
+                <h1 className='contact'>About Us!</h1>
+                <Link to='/home'><button className='sub'>Return to Home</button></Link> 
+            </nav>
+
+            <div className='bureaus'>
+                <p>
+                    At Crawford Academy, we strive to help you live your best life! We offer courses to help you live your best life.
+                    We offer courses to help you understand yourself, so you can truly know what life path and career path is best suited for you.
+                </p>
+                <br/>
+                <br/>
+                <p>
+                    Crawford Academy is an online learning community that empowers each of our members to get inspired, make discoveries, 
+                    and learn new skills. Our staff is available to answer questions or assist in any way during business hours. Please feel free to 
+                    submit messages to us at anytime and we will respond as soon as possible. We want you to feel supported and important to us
+                    throughout this journey.
+                </p>
+                <br/>
+                <br/>
+                <p>
+                    For your convenience, all contact methods are listed below, including direct messaging.
+                </p>
             </div>
-         <div className='inputs'>
-            <input onChange={this.handleChange} name ='name' placeholder='Name' />
-            <input onChange={this.handleChange} name='email' placeholder='Email' />
-            <input onChange={this.handleChange} name='phone' placeholder='Phone Number' />
-            <input onChange={this.handleChange} name='message' placeholder='Message' />
-            <select onChange={this.handleChange} name='method'>{this.state.preferredMethod.map(answer => (
-                <option>{answer}</option>))}
-            <option value="" disabled selected hidden>Preferred Contact Method</option>
-            </select>
-            <button className='sub' onClick={this.handleClick}>Submit</button>
-        </div> 
-        <div className='bureaus'>
-            <p id='bureau'>
-                At Crawford Academy, we strive to help you live your best life! We offer courses to help you live your best life.
-                We offer courses to help you understand yourself, so you can truly know what life path and career path is best suited for you.
-            </p>
-            <p>
-                Crawford Academy is an online learning community that empowers each of our members to get inspired, make discoveries, 
-                and learn new skills. Our staff is available to answer questions or assist in any way during business hours. Please feel free to 
-                submit messages to us at anytime and we will respond as soon as possible. We want you to feel supported and important to us
-                throughout this journey.
-            </p>
+
+            <section className='boxes'>
+                <a className='address'>
+                    <h1>Address</h1>
+                    <br/>
+                    <br/>
+                    <p>3939 Evergreen Court</p>
+                    <p>Allen, TX 75013</p>
+                    <br/>
+                    <br/>
+                    <img className='envelope' src='https://www.pngitem.com/pimgs/m/174-1747161_envelope-icon-png-green-transparent-png.png' alt='envelope' />
+                </a>
+
+                <a className='phone'>
+                    <h1>Phone</h1>
+                    <br/>
+                    <br/>
+                    <p>(888) 897-0987</p>
+                    <br/>
+                    <br/>
+                    <img className='phone-icon' src='https://previews.123rf.com/images/alexwhite/alexwhite1504/alexwhite150400996/38733888-phone-green-icon-telephone-sign.jpg' alt='phone' />
+                </a>
+
+                <a className='email'>
+                    <h1>Email</h1>
+                    <br/>
+                    <br/>
+                    <p>info@crawfordacademy.com</p>
+                    <br/>
+                    <br/>
+                    <img className='email-icon' src='https://st.depositphotos.com/1005920/2066/i/950/depositphotos_20667081-stock-photo-mail-green-circle-glossy-web.jpg' alt='email' />
+                </a>
+
+                <a className='hours'>
+                    <h1>Business Hours</h1>
+                    <br/>
+                    <br/>
+                    <p>Mon - Sat</p>
+                    <p>8:00am - 8:00pm</p>
+                    <br/>
+                    <br/>
+                    <img className='hours-icon' src='data:image/png;base64,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' alt='clock'/>
+                </a>
+            </section>
+            
+            <div className='inputs'>
+                <input onChange={this.handleChange} name ='name' placeholder='Name' />
+                <input onChange={this.handleChange} name='email' placeholder='Email' />
+                <input onChange={this.handleChange} name='phone' placeholder='Phone Number' />
+                <input onChange={this.handleChange} name='message' placeholder='Message' />
+                <select onChange={this.handleChange} name='method'>{this.state.preferredMethod.map(answer => (
+                    <option>{answer}</option>))}
+                <option value="" disabled selected hidden>Preferred Contact Method</option>
+                </select>
+                <button className='sub' onClick={this.handleClick}>Submit</button>
+            </div> 
+        
         </div>
-    </div>
     )
   }
 }

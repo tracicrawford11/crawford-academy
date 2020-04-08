@@ -25,7 +25,7 @@ class Cart extends Component {
             <span className='prod_name'>{course.title}</span>
             <p><b>Price: ${course.price}</b></p>
             <p><b>Quantity: {course.quantity}</b></p>
-            <button id='remove' onClick={this.handleRemove}>Remove Item from Cart</button>
+            <button className='remove' onClick={this.handleRemove}>Remove Item from Cart</button>
             <br/>
           </div>
         </div>

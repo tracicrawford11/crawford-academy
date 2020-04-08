@@ -63,8 +63,8 @@ class CheckoutForm extends React.Component {
 
     return (
         <div>
-          <header>
-            <h1>Enter Card Information for Checkout</h1>
+          <header className='top'>
+            <h1 className='enter'>Enter Card Information for Checkout</h1>
           </header>
           <form onSubmit={this.handleSubmit}>
             <CardElement onChange={this.handleCardChange} />
