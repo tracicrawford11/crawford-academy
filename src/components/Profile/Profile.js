@@ -22,7 +22,7 @@ class Profile extends Component {
 render() {
   const mappedProfile = this.state.profile.map((val, index) => {
     return (
-      <div key={index.id}>
+      <div className='profile' key={index.id}>
         <h2>First Name: {val.firstname}</h2>
         <br/>
         <h2>Last Name: {val.lastname}</h2>

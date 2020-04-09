@@ -23,29 +23,30 @@ render() {
   const mappedCourses = this.state.courses.map((val, index) => {
     
     return (
-      <div key={index.id}>
+      <div className='course-list' key={index.id}>
         
         <h1>{val.title}</h1>
+        <br/>
         <button className='add-cart' onClick={() => this.props.addToCart(val)}>Add to Cart</button>
         <br/>
         <h2>{val.description}</h2>
-        <h2>${val.price}</h2>
         <br/>
-        
-        
+        <h2>Price: ${val.price}</h2>
+        <br/>
       </div>
     )
   })
     return (
       <div>
 
-        <header className='services'>
+        <nav className='services'>
           <h1 className='services-h1'>COURSES</h1>
             <section className='services-links'>
               <Link to='/cart'><button>Continue to Cart</button></Link>
               <Link to='/home'><button>Return to Home</button></Link>
             </section>
-        </header>
+        </nav>
+
         <br />
         <section className='mapped-courses'>
           {mappedCourses}

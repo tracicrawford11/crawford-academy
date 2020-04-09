@@ -1,7 +1,7 @@
 body {
     background-color: $navBgColor;
 }
-.services {
+nav {
     overflow: $navOverflow; 
     background-color: $navBgColor;
     position: $navPosition;
@@ -11,36 +11,55 @@ body {
     align-items: $navAlItems;
     height: $navHeight;
 }
-.services-h1 {
+nav h1 {
     color:  $h1Color;
     font-weight: $h1FtWeight;
     font-family: $h1FtFamily;
     font-size:  $h1FtSize;
 }
-.services button {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: $btnFtSize;
-    border: none;
-    cursor: $btnCursor;
-    background-color: $navBgColor;
+.services-links {
+  float: $btnFloat;
+  color: $btnTextColor;
+  text-align: $btnTextAlign;
+  padding: $btnPadding;
+  text-decoration: $btnTextDecor;
+  font-size: $btnFontSize;
+  border: $btnBorder;
+  cursor: $btnCurs;
+  background-color: $btnBgColor;
+  width: $btnWidth;
+  height: $btnHeight;
+
 }
-.services button:hover {
-    background-color: $btnHovBgColor;
-    color: $btnHovTextColor;
+.services-links button:hover {
+    background-color:  $btnHovBgColor;
+    color:  $btnHovTextColor;
+    font-size:  $btnFtSize;
+    cursor: $btnCursor;
 } 
+.course-list {
+    display: flex;
+    flex-direction: column;
+}
 .add-cart {
-    font-size: 17px;
-    cursor: pointer;
-    background-color: wheat;
-    margin: 5px
+  float: $btnFloat;
+  color: $btnTextColor;
+  text-align: $btnTextAlign;
+  padding: $btnPadding;
+  text-decoration: $btnTextDecor;
+  font-size: $btnFontSize;
+  border: $btnBorder;
+  cursor: $btnCurs;
+  background-color: $btnBgColor;
+  width: $btnWidth;
+  height: $btnHeight;
 }
 .add-cart button:hover {
-    background-color: $btnHovBgColor;
-    color: $btnHovTextColor;
+    background-color:  $btnHovBgColor;
+    color:  $btnHovTextColor;
+    font-size:  $btnFtSize;
+    cursor: $btnCursor;
+
 }
 .mapped-courses {
     width: 90vw;

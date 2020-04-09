@@ -57,7 +57,7 @@ export default function cartReducer (state=initialState, action) {
     if (action.type === ADD_TO_CART) {
         console.log(action.payload.course_id)
         console.log(state.courses)
-        let addedCourse = state.courses.find(course => course.course_id === action.payload.course_id)
+        let addedCourse = state.courses.find(course => course.prod_id === action.payload.prod_id)
         let existed_course = state.addedCourses.find (course => action.payload.course_id === course.course_id)
         console.log(addedCourse)
         if (existed_course) {

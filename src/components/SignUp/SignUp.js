@@ -44,9 +44,9 @@ class SignUp extends Component {
                 </header>
                 
                 <section className='inputs'>
-                    <input onChange={this.handleChange} name ='first_name' placeholder='First Name' />
-                    <input onChange={this.handleChange} name ='last_name' placeholder='Last Name' />
-                    <input onChange={this.handleChange} name='email' placeholder='Email' />
+                    <input onChange={this.handleChange} name ='firstname' placeholder='First Name' />
+                    <input onChange={this.handleChange} name ='lastname' placeholder='Last Name' />
+                    <input onChange={this.handleChange} name='emailaddress' placeholder='Email' />
                     <input onChange={this.handleChange} name='password' placeholder='Password' />
                     <input onChange={this.handleChange} name='phone' placeholder='Phone Number' />
                     <input onChange={this.handleChange} name='state' placeholder='State of Residence' />
