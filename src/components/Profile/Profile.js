@@ -32,27 +32,30 @@ render() {
         <h2>Phone Number: {val.phone}</h2>
         <br/>
         <h2>State of Residence: {val.state}</h2>
-        <br/>
-        <h2>Course: {val.course}</h2>
       </div>
     )
   }) 
     return ( 
       <div>
-        <header>
+
+        <nav>
           <h1>Student Profile</h1>
-        </header>
+        </nav>
+
         <section className='mapped-profile'>
           {mappedProfile}
         </section>
+
         <section className='update-phone'>
           <button className='update'>Update Phone Number</button>
           <input placeholder ='Enter New Phone Number, if needed.' name="phone" onChange={e => this.setState({phone: e.target.value})}></input>
           <button type='submit' className='sub' onClick ={this.updateUserPhone}>Submit</button>
         </section>
+
         <section className='submit-btn'>
           <Link to='/home'><button className='return-button'>Logout and Return to Home</button></Link>
         </section>
+
       </div>
     )
   }

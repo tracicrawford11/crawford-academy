@@ -1,10 +1,26 @@
-header {
-    margin-bottom: 30px;
+nav {
+    overflow: $navOverflow; 
+    background-color: $navBgColor;
+    position: $navPosition;
+    width: $navWidth;
+    display: $navDisplay;
+    justify-content: $navJustCon;
+    align-items: $navAlItems;
+    height: $navHeight;
+
+}
+nav h1 {
+    color: $h1Color;
+    font-weight: $h1FtWeight;
+    font-family:  $h1FtFamily;
+    font-size: $h1FtSize;
+
 }
 .mapped-profile {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 .update-phone {
     display: flex;
@@ -12,38 +28,84 @@ header {
     margin-top: 20px
 }
 .sub {
-    font-size: 15px;
-    cursor: pointer;
-    width: 100px
+    float: $btnFloat;
+    color: $btnTextColor;
+    text-align: $btnTextAlign;
+    padding: $btnPadding;
+    text-decoration: $btnTextDecor;
+    font-size: $btnFontSize;
+    border: $btnBorder;
+    cursor: $btnCurs;
+    background-color: $btnBgColor;
+    width: $btnWidth;
+    height: $btnHeight;
+
 }
 .sub button:hover {
-    background-color: royalblue;
-    color: white;
+    background-color:  $btnHovBgColor;
+    color:  $btnHovTextColor;
+    font-size:  $btnFtSize;
+    cursor: $btnCursor;
+
 }  
 input {
     height: 20px;
     width: 200px
 } 
 .update {
-    font-size: 15px;
-    cursor: pointer;
+    float: $btnFloat;
+    color: $btnTextColor;
+    text-align: $btnTextAlign;
+    padding: $btnPadding;
+    text-decoration: $btnTextDecor;
+    font-size: $btnFontSize;
+    border: $btnBorder;
+    cursor: $btnCurs;
+    background-color: $btnBgColor;
+    width: $btnWidth;
+    height: $btnHeight;
+
     
 } 
 .update button:hover {
-    background-color: royalblue;
-    color: white;
+    background-color:  $btnHovBgColor;
+    color:  $btnHovTextColor;
+    font-size:  $btnFtSize;
+    cursor: $btnCursor;
+
 }
 .submit-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px
+    float: $btnFloat;
+    color: $btnTextColor;
+    text-align: $btnTextAlign;
+    padding: $btnPadding;
+    text-decoration: $btnTextDecor;
+    font-size: $btnFontSize;
+    border: $btnBorder;
+    cursor: $btnCurs;
+    background-color: $btnBgColor;
+    width: $btnWidth;
+    height: $btnHeight;
+
 }
 .return-button {
-    font-size: 15px;
-    cursor: pointer;
-    height: 30px;
+    float: $btnFloat;
+    color: $btnTextColor;
+    text-align: $btnTextAlign;
+    padding: $btnPadding;
+    text-decoration: $btnTextDecor;
+    font-size: $btnFontSize;
+    border: $btnBorder;
+    cursor: $btnCurs;
+    background-color: $btnBgColor;
+    width: $btnWidth;
+    height: $btnHeight;
+
 }
 .return-button button:hover {
-    background-color: royalblue;
-    color: white;
+    background-color:  $btnHovBgColor;
+    color:  $btnHovTextColor;
+    font-size:  $btnFtSize;
+    cursor: $btnCursor;
+
 }
