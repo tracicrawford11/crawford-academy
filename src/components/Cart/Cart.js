@@ -18,9 +18,10 @@ class Cart extends Component {
   
   render() {
     let addedCourses = this.props.courses.length ? 
-    (this.props.courses.map(course => {
+    (this.props.courses.map((course, index) => {
+      console.log(course)
       return (
-        <div key={course.id}>
+        <div key={index}>
           <div className='description'>
             <span className='prod_name'>{course.title}</span>
             <p><b>Price: ${course.price}</b></p>

@@ -86,7 +86,7 @@ app.post('/auth/login', authController.login)
 app.post('/auth/logout', authController.logout)
 app.get('/auth/user', authController.getUser)
 
-app.get('/api/prod', courseController.getCourses)
+app.get('/api/courses', courseController.getCourses)
 
 app.post('/api/cart/checkout', cartController.checkout)
 app.post('/api/cart/:id', cartController.add)

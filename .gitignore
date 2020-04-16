@@ -2,6 +2,7 @@
 
 # dependencies
 .env
+ca.env
 /node_modules
 /.pnp
 .pnp.js
@@ -25,5 +26,7 @@ yarn-error.log*
 sendgrid.env
 sendgrid.env
 sendgrid.env
+sendgrid2.env
+sendgrid 2.env
 
 src/**/*.css

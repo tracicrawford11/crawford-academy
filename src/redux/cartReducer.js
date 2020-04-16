@@ -4,6 +4,7 @@ const initialState = {
     courses: [],
     cart: [],
     addedCourses: [],
+    quantity:   0,
     total: 0
 }
 
@@ -13,7 +14,7 @@ export const getCourses = () => {
     console.log('hit')
     return {
         type: GET_COURSES,
-        payload: axios.get('/api/prod')
+        payload: axios.get('/api/courses')
     }
 }
 
@@ -52,19 +53,22 @@ export const subQuantity = (course) => {
 
 export default function cartReducer (state=initialState, action) {
     if (action.type === `${GET_COURSES}_FULFILLED`) {
+        console.log(action.payload)
         return { ...state, courses: action.payload.data}
     }
     if (action.type === ADD_TO_CART) {
         console.log(action.payload.course_id)
         console.log(state.courses)
-        let addedCourse = state.courses.find(course => course.prod_id === action.payload.prod_id)
+        let addedCourse = state.courses.find(course => console.log(course))
+        //course.course_id === action.payload.course_id)
         let existed_course = state.addedCourses.find (course => action.payload.course_id === course.course_id)
         console.log(addedCourse)
+        console.log(existed_course)
         if (existed_course) {
-            addedCourse.quantity++
+            state.quantity++
                 return {...state, cart: state.cart + addedCourse}
             } else {
-                addedCourse.quantity = 1
+                state.quantity = 1
                 let newTotal = state.total + addedCourse
                 return {...state,
                 addedCourses: [...state.addedCourses, addedCourse],

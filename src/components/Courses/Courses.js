@@ -12,16 +12,16 @@ class Courses extends Component {
   }
 }
   componentDidMount() {
-    axios.get('/api/prod').then(response => {
-      console.log(response.data)
-    this.setState({courses: response.data})})
-    // this.props.getCourses()
+    // axios.get('/api/prod').then(response => {
+    //   console.log(response.data)
+    // this.setState({courses: response.data})})
+    this.props.getCourses()
     
   }
 render() {
   console.log(this.props.courses)
-  const mappedCourses = this.state.courses.map((val, index) => {
-    
+  const mappedCourses = this.props.courses.map((val, index) => {
+    console.log(val)
     return (
       <div className='course-list' key={index.id}>
         
